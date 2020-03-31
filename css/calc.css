@@ -1,0 +1,131 @@
+body {
+  background-color: #121619;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
+
+#calculator {
+  width: 248px;
+  margin: 75px auto;
+  padding: 30px 30px 40px;
+  background-color: #212327;
+  border-radius: 20px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 55px 55px 55px 55px;
+}
+
+input {
+  background-color: #212327;
+  border: 0px;
+  border-bottom: 2px solid #303030;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18pt;
+  padding: 10px;
+  width: 224px;
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+#head {
+  grid-column: 1 / 5;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  margin: 0px;
+  text-transform: uppercase;
+  font-size: 16pt;
+  margin-bottom: 10px;
+  padding-bottom: 0px;
+  background: -webkit-linear-gradient(#f578d3, #60eff7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#log {
+  grid-column: 1 / 5;
+  text-align: right;
+  margin-right: 5px;
+  padding-bottom: 10px;
+  color: #b4b4b4;
+  min-height: 20px;
+}
+  
+#result {
+  grid-column: 1 / 5;
+}
+
+#buttons {
+  grid-column: 1 / 5;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 55px 55px 55px 55px;
+}
+
+.btn {
+  text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px; 
+}
+
+.number {
+  background-color: #212327;
+  border: 3px solid #212327;
+  transition: all .2s ease;
+}
+
+.number:hover {
+  cursor: pointer;
+  background-color: #70d3ec;
+}
+
+.sign {
+  background-color: #303236;
+  border: 3px solid #212327;
+  transition: all 0.2s ease;
+}
+
+.sign:hover {
+  cursor: pointer;
+  background-color: #cc95d9; 
+}
+
+.selected {
+  border-color: #fff;
+  opacity: 1 !important;
+}
+
+#delete {
+  padding-top: 13px;
+  padding-bottom: 7px;
+}
+
+#equal {
+  grid-area: 4 / 4 / 6 / 5;
+  display: flex;
+  height: 92px;
+  border-radius: 30px;
+  background-image: linear-gradient(#f578d3, #60eff7);
+  /*box-shadow:
+    0px -2px 10px #f22c5f,
+    0px 2px 10px #19fef1;*/
+  opacity: 0.7;   
+}
+
+#equal div {
+  margin: 0 auto;
+  display: inline-block;
+  align-self: flex-end;
+  font-size: 20pt;
+  opacity: 1;
+}
+
+#equal:hover{
+  opacity: 1;
+}
